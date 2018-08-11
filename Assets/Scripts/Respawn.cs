@@ -36,6 +36,9 @@ public class Respawn : MonoBehaviour
     {
         spawned = Instantiate(toSpawn);
         spawned.transform.position = this.transform.position;
+        if (spawned.GetComponent<PlaceableProperties>())
+            spawned.GetComponent<PlaceableProperties>().delicate = true;
+        GameObject.FindGameObjectWithTag("MainCamera").GetComponent<FixOn>().toFollow = spawned;
         _respawning = false;
     }
 }

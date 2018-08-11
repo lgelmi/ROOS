@@ -8,6 +8,6 @@ public class PlaceableProperties : MonoBehaviour
     public string placeableName;
     public enum Type { Sphere };
     public Type placeableType;
-
+    public bool delicate = false;
     
 }

@@ -25,8 +25,8 @@ GameObject:
   - component: {fileID: 114368944032584118}
   - component: {fileID: 58971597281448054}
   - component: {fileID: 50311063161200426}
-  - component: {fileID: 114610317375823338}
   - component: {fileID: 114335789708184866}
+  - component: {fileID: 114025224352272902}
   m_Layer: 0
   m_Name: SphereExpandingTouch
   m_TagString: Placeable
@@ -124,6 +124,20 @@ CircleCollider2D:
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
   m_Radius: 0.5
+--- !u!114 &114025224352272902
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1032531092360628}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 90005d6ff0ab3e0498425e5239ee12f8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  placeableName: Expanding
+  placeableType: 0
+  delicate: 0
 --- !u!114 &114078720261062936
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -161,14 +175,3 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   collisionParticles: {fileID: 1920077301572884, guid: 82fe09b122c974f6faa02d4c3b424b33,
     type: 2}
---- !u!114 &114610317375823338
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1032531092360628}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bf53a50fdf7a94adb9c2de44928a0daf, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 

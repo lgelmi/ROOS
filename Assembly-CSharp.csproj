@@ -63,7 +63,6 @@
   <ItemGroup>
     <Compile Include="Assets\Scripts\CollisionScript.cs" />
     <Compile Include="Assets\Scripts\Expand.cs" />
-    <Compile Include="Assets\Scripts\EyesOnMe.cs" />
     <Compile Include="Assets\Scripts\FixOn.cs" />
     <Compile Include="Assets\Scripts\MainGame.cs" />
     <Compile Include="Assets\Scripts\MouseFollow.cs" />
