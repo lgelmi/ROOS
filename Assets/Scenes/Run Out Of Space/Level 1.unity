@@ -225,6 +225,16 @@ Prefab:
       propertyPath: m_Camera
       value: 
       objectReference: {fileID: 1284987106}
+    - target: {fileID: 224242166889127316, guid: b2661e0b7c804ab4caf4ae7bf77ac15f,
+        type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224905523542642364, guid: b2661e0b7c804ab4caf4ae7bf77ac15f,
+        type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b2661e0b7c804ab4caf4ae7bf77ac15f, type: 2}
   m_IsPrefabAsset: 0
@@ -339,7 +349,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   placeable:
-  - {fileID: 1032531092360628, guid: bf8d602e296924265b78837ba815dd4a, type: 2}
+  - {fileID: 1032531092360628, guid: 0946c20c18240244aa231147905c7276, type: 2}
   - {fileID: 1032531092360628, guid: 40072028d9b41fa4ea26fdb5375f196b, type: 2}
 --- !u!114 &1941327037
 MonoBehaviour:
@@ -353,7 +363,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   placeableNames:
-  - SphereFixed
-  - SphereExpandingTouch
-  placeableAmount: 0200000002000000
+  - Fixed
+  - Expanding
+  placeableAmounts: 0200000000000000
   winArea: 100

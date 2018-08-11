@@ -5,8 +5,9 @@ using UnityEngine;
 public class PlaceableProperties : MonoBehaviour
 {
 
-    public string name;
+    public string placeableName;
     public enum Type { Sphere };
     public Type placeableType;
 
+    
 }

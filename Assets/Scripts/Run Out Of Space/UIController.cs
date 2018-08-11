@@ -10,9 +10,9 @@ public class UIController : MonoBehaviour
 
     private Text current;
     private Text available;
+    private Text score;
 
-    // Use this for initialization
-    void Start()
+    void Awake()
     {
         foreach (Transform child in canvas.transform)
         {
@@ -20,31 +20,38 @@ public class UIController : MonoBehaviour
                 available = child.GetComponent<Text>();
             else if (child.name == "CurrentPlaceable")
                 current = child.GetComponent<Text>();
+            else if (child.name == "Score")
+                score = child.GetComponent<Text>();
         }
-
     }
 
     public void updateCurrentPlaceable(string name)
     {
-        //current.text = "Current placeable: " + name;
-        print("?");
+        current.text = "Current placeable: " + name;
     }
 
     public void updateAvailablePlaceable(List<string> names, List<int> amounts)
     {
-        available.text = "Available placeable:";
+        string text = "";
 
-        if (names.Count <= 0)
+        for (int i = 0; i < names.Count; i++)
         {
-            available.text += " None.";
+            if (amounts[i] > 0)
+                text += " " + amounts[i].ToString() + " " + names[i];
         }
-        else
+        if (string.Compare(text, "") == 0)
         {
-            for (int i = 0; i < names.Count; i++)
-            {
-                available.text += " " + names[i] + " " + amounts.ToString();
-            }
-            available.text += ".";
+            text = " None";
         }
+
+        available.text = "Available placeable:" + text;
     }
+
+    public void updateScore(float currentScore, float winScore)
+    {
+        score.text = "Score: " + currentScore.ToString() + "/" + winScore.ToString();
+
+    }
+
+    
 }
