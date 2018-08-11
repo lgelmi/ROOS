@@ -57,6 +57,7 @@
      <Compile Include="Assets\Scripts\Expand.cs" />
      <Compile Include="Assets\Scripts\MainGame.cs" />
      <Compile Include="Assets\Scripts\MouseFollow.cs" />
+     <Compile Include="Assets\Scripts\ParticleSystemAutoDestroy.cs" />
  <Reference Include="UnityEditor.StandardEvents">
  <HintPath>/home/voppe/Development/voppe/roos/Library/ScriptAssemblies/UnityEditor.StandardEvents.dll</HintPath>
  </Reference>
