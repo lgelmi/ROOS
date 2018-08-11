@@ -63,10 +63,14 @@
   <ItemGroup>
     <Compile Include="Assets\Scripts\CollisionScript.cs" />
     <Compile Include="Assets\Scripts\Expand.cs" />
+    <Compile Include="Assets\Scripts\EyesOnMe.cs" />
+    <Compile Include="Assets\Scripts\FixOn.cs" />
     <Compile Include="Assets\Scripts\MainGame.cs" />
     <Compile Include="Assets\Scripts\MouseFollow.cs" />
+    <Compile Include="Assets\Scripts\Movement.cs" />
     <Compile Include="Assets\Scripts\ParticleSystemAutoDestroy.cs" />
     <Compile Include="Assets\Scripts\PlaceableProperties.cs" />
+    <Compile Include="Assets\Scripts\Respawn.cs" />
     <Compile Include="Assets\Scripts\Rotate.cs" />
     <Compile Include="Assets\Scripts\Run Out Of Space\MainGameRun.cs" />
     <Compile Include="Assets\Scripts\Run Out Of Space\RunLevelDescriptor.cs" />
