@@ -7,13 +7,15 @@ public class MainGame : MonoBehaviour
     public List<GameObject> placeable;
 
     private GameObject toPlace;
-
     private GameObject placing;
+    private UIController ui;
 
     // Use this for initialization
     void Start()
     {
         toPlace = placeable[0];
+        ui = this.GetComponent<UIController>();
+        ui.updateCurrentPlaceable("Tuo nonno");
     }
 
     // Update is called once per frame
