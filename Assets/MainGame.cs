@@ -25,9 +25,12 @@ public class MainGame : MonoBehaviour
             placing.transform.position = position;
         }
 
-        if (Input.GetMouseButtonUp(0) && placing)
+        if (Input.GetMouseButtonUp(0))
         {
-            placing.GetComponent<CollisionScript>().FixInPlace();
+            if (placing)
+            {
+                placing.GetComponent<CollisionScript>().FixInPlace();
+            }
             placing = null;
         }
     }
