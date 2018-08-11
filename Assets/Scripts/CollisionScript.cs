@@ -20,22 +20,26 @@ public class CollisionScript : MonoBehaviour
 
     void OnTriggerEnter2D(Collider2D collider)
     {
-        this.enabled = false;
-        if (this.tAlive > 1)
+        if (collider.tag == "Wall" || collider.tag == "NoSpawn" || collider.tag == "Placeable")
         {
-            FixInPlace();
-        }
-        else
-        {
-            Destroy(this.gameObject);
+            if (this.tAlive > 1)
+            {
+                this.enabled = false;
+                if (collider.tag != "NoSpawn")
+                {
+                    FixInPlace();
+                }
+            }
+            else
+            {
+                Destroy(this.gameObject);
+            }
         }
     }
 
     public void FixInPlace()
     {
-        if (this.GetComponent<Expand>()!=null)
-            this.GetComponent<Expand>().speed = 0;
-        if (this.GetComponent<MouseFollow>() != null)
-            this.GetComponent<MouseFollow>().enabled = false;
+        this.GetComponent<Expand>().speed = 0;
+        this.GetComponent<MouseFollow>().enabled = false;
     }
 }
