@@ -29,7 +29,7 @@ public class CollisionScript : MonoBehaviour
                 this.enabled = false;
                 if (collider.tag != "NoSpawn")
                 {
-
+                    Instantiate(collisionParticles).transform.position = collision.GetContact(0).point;
                     FixInPlace();
                 }
             }
