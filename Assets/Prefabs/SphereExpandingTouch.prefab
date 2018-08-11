@@ -21,11 +21,12 @@ GameObject:
   - component: {fileID: 4845196704865858}
   - component: {fileID: 33841527205485164}
   - component: {fileID: 23921034963754408}
-  - component: {fileID: 114502228091873568}
   - component: {fileID: 114078720261062936}
   - component: {fileID: 114368944032584118}
   - component: {fileID: 58971597281448054}
   - component: {fileID: 50311063161200426}
+  - component: {fileID: 114610317375823338}
+  - component: {fileID: 114335789708184866}
   m_Layer: 0
   m_Name: SphereExpandingTouch
   m_TagString: Placeable
@@ -135,6 +136,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 0.01
+--- !u!114 &114335789708184866
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1032531092360628}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 32e419a018f9a4d1f80948664bf308db, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  moveSpeed: 0.1
 --- !u!114 &114368944032584118
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -148,8 +161,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   collisionParticles: {fileID: 1920077301572884, guid: 82fe09b122c974f6faa02d4c3b424b33,
     type: 2}
-  tAlive: 0
---- !u!114 &114502228091873568
+--- !u!114 &114610317375823338
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
@@ -157,8 +169,6 @@ MonoBehaviour:
   m_GameObject: {fileID: 1032531092360628}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f31b5cd47d9b345bbb3fe97fa52fd9cb, type: 3}
+  m_Script: {fileID: 11500000, guid: bf53a50fdf7a94adb9c2de44928a0daf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  mousePosition: {x: 0, y: 0, z: 0}
-  moveSpeed: 0.5

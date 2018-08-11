@@ -16,8 +16,8 @@ public class Movement : MonoBehaviour
     void FixedUpdate()
     {
         var translation = Vector2.zero;
-        translation.x += Input.GetAxis("Horizontal") * moveSpeed;
-        translation.y += Input.GetAxis("Vertical") * moveSpeed;
+        translation.x += Input.GetAxis("Horizontal") * moveSpeed * this.transform.localScale.x;
+        translation.y += Input.GetAxis("Vertical") * moveSpeed * this.transform.localScale.y;
         transform.position += new Vector3(translation.x, translation.y, 0);
     }
 }
