@@ -1,5 +1,6 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
 
 public class MainGameRun : MonoBehaviour
@@ -80,6 +81,7 @@ public class MainGameRun : MonoBehaviour
         ToPlace = placeable[0];
         ui.updateAvailablePlaceable(placeableNames, placeableAmounts);
         ui.updateScore(Score, areaWin);
+        ui.setWin(false);
     }
 
     // Update is called once per frame
@@ -115,6 +117,11 @@ public class MainGameRun : MonoBehaviour
                 placing.GetComponent<CollisionScript>().FixInPlace();
             }
             placing = null;
+
+            if (Score > areaWin)
+                ui.setWin();
+            else if (placeableAmounts.Sum() <= 0)
+                ui.lose();
         }
 
         if (Input.GetKeyUp(KeyCode.Alpha1))

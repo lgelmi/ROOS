@@ -25,7 +25,7 @@ GameObject:
   - component: {fileID: 58971597281448054}
   - component: {fileID: 50311063161200426}
   - component: {fileID: 114904202040102042}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: SphereFixed
   m_TagString: Placeable
   m_Icon: {fileID: 0}

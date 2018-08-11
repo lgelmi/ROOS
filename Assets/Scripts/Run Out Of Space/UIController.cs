@@ -11,6 +11,7 @@ public class UIController : MonoBehaviour
     private Text current;
     private Text available;
     private Text score;
+    private Text win;
 
     void Awake()
     {
@@ -22,6 +23,8 @@ public class UIController : MonoBehaviour
                 current = child.GetComponent<Text>();
             else if (child.name == "Score")
                 score = child.GetComponent<Text>();
+            else if (child.name == "Win")
+                win = child.GetComponent<Text>();
         }
     }
 
@@ -49,9 +52,21 @@ public class UIController : MonoBehaviour
 
     public void updateScore(float currentScore, float winScore)
     {
-        score.text = "Score: " + currentScore.ToString() + "/" + winScore.ToString();
+        score.text = string.Format("Score: {0:N0}/{1}", currentScore*10, winScore * 10);
 
     }
 
-    
+    public void setWin(bool victory = true)
+    {
+        if (victory)
+            win.text = "You Win Mother... ehm... player!";
+        else
+            win.text = "";
+    }
+
+    public void lose()
+    {
+        win.text = "You did not run out of space enough...";
+    }
+
 }
