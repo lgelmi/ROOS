@@ -39,7 +39,9 @@ public class CollisionScript : MonoBehaviour
 
     public void FixInPlace()
     {
-        this.GetComponent<Expand>().speed = 0;
-        this.GetComponent<MouseFollow>().enabled = false;
+        if (this.GetComponent<Expand>() != null)
+            this.GetComponent<Expand>().speed = 0;
+        if (this.GetComponent<MouseFollow>() != null)
+            this.GetComponent<MouseFollow>().enabled = false;
     }
 }

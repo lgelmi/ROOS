@@ -26,7 +26,7 @@ public class MainGame : MonoBehaviour
                 var position = Input.mousePosition;
                 position = Camera.main.ScreenToWorldPoint(position);
                 placing = Instantiate(toPlace);
-                placing.transform.position = position;
+                placing.transform.position = new Vector3(position.x, position.y, 0);
             }
         }
 
