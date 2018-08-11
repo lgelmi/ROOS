@@ -7,7 +7,7 @@ TagManager:
   - Wall
   - NoSpawn
   - Placeable
-  - Gatto
+  - Enemy
   layers:
   - Default
   - TransparentFX
