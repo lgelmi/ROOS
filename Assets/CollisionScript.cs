@@ -2,9 +2,8 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Expand : MonoBehaviour
+public class CollisionScript : MonoBehaviour
 {
-    public float speed = 1;
 
     // Use this for initialization
     void Start()
@@ -15,6 +14,12 @@ public class Expand : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        this.transform.localScale += new Vector3(1 * speed, 1 * speed, 0);
+
+    }
+
+    void OnTriggerEnter2D(Collider2D collider)
+    {
+        this.GetComponent<Expand>().speed = 0;
+        this.GetComponent<MouseFollow>().enabled = false;
     }
 }

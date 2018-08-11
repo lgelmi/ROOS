@@ -5,16 +5,16 @@ using UnityEngine;
 public class MouseFollow : MonoBehaviour
 {
     public Vector3 mousePosition = Vector3.zero;
-    public float moveSpeed = 1;
+    public float moveSpeed = 0.1f;
 
     // Use this for initialization
     void Start()
     {
-
+        this.FixedUpdate();
     }
 
     // Update is called once per frame
-    void Update()
+    void FixedUpdate()
     {
         mousePosition = Input.mousePosition;
         mousePosition = Camera.main.ScreenToWorldPoint(mousePosition);
