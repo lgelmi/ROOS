@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class CollisionScript : MonoBehaviour
 {
+    public GameObject collisionParticles;
     public int tAlive = 0;
 
     // Use this for initialization
@@ -18,8 +19,9 @@ public class CollisionScript : MonoBehaviour
         this.tAlive++;
     }
 
-    void OnTriggerEnter2D(Collider2D collider)
+    void OnCollisionEnter2D(Collision2D collision)
     {
+        var collider = collision.collider;
         if (collider.tag == "Wall" || collider.tag == "NoSpawn" || collider.tag == "Placeable")
         {
             if (this.tAlive > 1)
@@ -27,6 +29,7 @@ public class CollisionScript : MonoBehaviour
                 this.enabled = false;
                 if (collider.tag != "NoSpawn")
                 {
+
                     FixInPlace();
                 }
             }
