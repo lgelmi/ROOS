@@ -26,6 +26,7 @@ GameObject:
   - component: {fileID: 114368944032584118}
   - component: {fileID: 58971597281448054}
   - component: {fileID: 50311063161200426}
+  - component: {fileID: 114904202040102042}
   m_Layer: 0
   m_Name: SphereExpandingTouch
   m_TagString: Placeable
@@ -162,3 +163,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   mousePosition: {x: 0, y: 0, z: 0}
   moveSpeed: 0.5
+--- !u!114 &114904202040102042
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1032531092360628}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 90005d6ff0ab3e0498425e5239ee12f8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  name: SphereExpandingTouch
+  placeableType: 0

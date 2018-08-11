@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class MainGame : MonoBehaviour
+public class MainGameRun : MonoBehaviour
 {
     public List<GameObject> placeable;
 
@@ -17,7 +17,8 @@ public class MainGame : MonoBehaviour
         if (this.GetComponent<UIController>() != null)
         {
             ui = this.GetComponent<UIController>();
-            ui.updateCurrentPlaceable("Tuo nonno");
+            if (toPlace.GetComponent<PlaceableProperties>() != null)
+                ui.updateCurrentPlaceable(toPlace.GetComponent<PlaceableProperties>().name);
         }
     }
 
