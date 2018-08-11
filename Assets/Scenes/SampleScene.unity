@@ -149,8 +149,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 57c27e774e36b4d0796d2a0ae0ef7474, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  toPlace: {fileID: 1032531092360628, guid: bf8d602e296924265b78837ba815dd4a, type: 2}
-  placing: {fileID: 0}
+  placeable:
+  - {fileID: 1032531092360628, guid: 40072028d9b41fa4ea26fdb5375f196b, type: 2}
 --- !u!20 &519420031
 Camera:
   m_ObjectHideFlags: 0
