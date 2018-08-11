@@ -28,7 +28,7 @@ GameObject:
   - component: {fileID: 50311063161200426}
   m_Layer: 0
   m_Name: Sphere
-  m_TagString: Untagged
+  m_TagString: Placeable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -146,6 +146,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e68c31db937d8444581bb88fc1ab21b5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  tAlive: 0
 --- !u!114 &114502228091873568
 MonoBehaviour:
   m_ObjectHideFlags: 1
