@@ -22,15 +22,20 @@ public class CollisionScript : MonoBehaviour
     void OnCollisionEnter2D(Collision2D collision)
     {
         var collider = collision.collider;
-        if (collider.tag == "Wall" || collider.tag == "NoSpawn" || collider.tag == "Placeable")
+        if (collider.tag == "Wall" || collider.tag == "NoSpawn" || collider.tag == "Placeable" || collider.tag == "Enemy")
         {
             if (this.tAlive > 1)
             {
                 this.enabled = false;
-                if (collider.tag != "NoSpawn")
+                if (collider.tag == "Wall" || collider.tag == "Placeable")
                 {
                     Instantiate(collisionParticles).transform.position = collision.GetContact(0).point;
                     FixInPlace();
+                }
+                if (collider.tag == "Enemy")
+                {
+                    Instantiate(collisionParticles).transform.position = collision.GetContact(0).point;
+                    Destroy(this.gameObject);
                 }
             }
             else

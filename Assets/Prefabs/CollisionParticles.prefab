@@ -21,6 +21,7 @@ GameObject:
   - component: {fileID: 4363378356706676}
   - component: {fileID: 198191085904140982}
   - component: {fileID: 199728334112980534}
+  - component: {fileID: 114707714578584232}
   m_Layer: 0
   m_Name: CollisionParticles
   m_TagString: Untagged
@@ -41,6 +42,17 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: -90, y: 0, z: 0}
+--- !u!114 &114707714578584232
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1920077301572884}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 53c29be6fc13447c393b8428f4520e7d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!198 &198191085904140982
 ParticleSystem:
   m_ObjectHideFlags: 1
