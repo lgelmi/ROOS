@@ -158,4 +158,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   mousePosition: {x: 0, y: 0, z: 0}
-  moveSpeed: 0.1
+  moveSpeed: 0.5

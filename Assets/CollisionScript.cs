@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class CollisionScript : MonoBehaviour
 {
+    public int tAlive = 0;
 
     // Use this for initialization
     void Start()
@@ -12,14 +13,22 @@ public class CollisionScript : MonoBehaviour
     }
 
     // Update is called once per frame
-    void Update()
+    void FixedUpdate()
     {
-
+        this.tAlive++;
     }
 
     void OnTriggerEnter2D(Collider2D collider)
     {
-        this.GetComponent<Expand>().speed = 0;
-        this.GetComponent<MouseFollow>().enabled = false;
+        this.enabled = false;
+        if (this.tAlive > 1)
+        {
+            this.GetComponent<Expand>().speed = 0;
+            this.GetComponent<MouseFollow>().enabled = false;
+        }
+        else
+        {
+            Destroy(this.gameObject);
+        }
     }
 }

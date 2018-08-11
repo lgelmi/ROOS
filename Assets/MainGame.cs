@@ -19,18 +19,7 @@ public class MainGame : MonoBehaviour
         {
             var position = Input.mousePosition;
             position = Camera.main.ScreenToWorldPoint(position);
-            if (CanPlace(position))
-            {
-                Instantiate(toPlace).transform.position = position;
-            }
+            Instantiate(toPlace).transform.position = position;
         }
-    }
-
-    bool CanPlace(Vector2 position)
-    {
-        RaycastHit hit;
-        var ray = Camera.main.ScreenPointToRay(position);
-
-        return !Physics.Raycast(ray, out hit);
     }
 }
