@@ -6,6 +6,8 @@ public class MainGame : MonoBehaviour
 {
     public GameObject toPlace;
 
+    public GameObject placing;
+
     // Use this for initialization
     void Start()
     {
@@ -19,7 +21,14 @@ public class MainGame : MonoBehaviour
         {
             var position = Input.mousePosition;
             position = Camera.main.ScreenToWorldPoint(position);
-            Instantiate(toPlace).transform.position = position;
+            placing = Instantiate(toPlace);
+            placing.transform.position = position;
+        }
+
+        if (Input.GetMouseButtonUp(0) && placing)
+        {
+            placing.GetComponent<CollisionScript>().FixInPlace();
+            placing = null;
         }
     }
 }

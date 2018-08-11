@@ -23,12 +23,17 @@ public class CollisionScript : MonoBehaviour
         this.enabled = false;
         if (this.tAlive > 1)
         {
-            this.GetComponent<Expand>().speed = 0;
-            this.GetComponent<MouseFollow>().enabled = false;
+            FixInPlace();
         }
         else
         {
             Destroy(this.gameObject);
         }
+    }
+
+    public void FixInPlace()
+    {
+        this.GetComponent<Expand>().speed = 0;
+        this.GetComponent<MouseFollow>().enabled = false;
     }
 }
