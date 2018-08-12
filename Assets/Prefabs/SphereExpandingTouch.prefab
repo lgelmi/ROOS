@@ -25,8 +25,8 @@ GameObject:
   - component: {fileID: 114368944032584118}
   - component: {fileID: 58971597281448054}
   - component: {fileID: 50311063161200426}
-  - component: {fileID: 114335789708184866}
   - component: {fileID: 114025224352272902}
+  - component: {fileID: 114779112249377598}
   m_Layer: 0
   m_Name: SphereExpandingTouch
   m_TagString: Placeable
@@ -150,18 +150,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 0.01
---- !u!114 &114335789708184866
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1032531092360628}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 32e419a018f9a4d1f80948664bf308db, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  moveSpeed: 0.1
 --- !u!114 &114368944032584118
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -175,3 +163,17 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   collisionParticles: {fileID: 1920077301572884, guid: 82fe09b122c974f6faa02d4c3b424b33,
     type: 2}
+--- !u!114 &114779112249377598
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1032531092360628}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f31b5cd47d9b345bbb3fe97fa52fd9cb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxSpeed: 0.5
+  minimumDistance: 0
+  maximumDistance: 10

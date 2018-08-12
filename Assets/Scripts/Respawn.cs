@@ -38,6 +38,11 @@ public class Respawn : MonoBehaviour
         spawned.transform.position = this.transform.position;
         if (spawned.GetComponent<PlaceableProperties>())
             spawned.GetComponent<PlaceableProperties>().delicate = true;
+        if (spawned.GetComponent<MouseFollow>())
+        { 
+            spawned.GetComponent<MouseFollow>().minimumDistance = 2;
+            spawned.GetComponent<MouseFollow>().maxSpeed = 0.1f;
+        }
         GameObject.FindGameObjectWithTag("MainCamera").GetComponent<FixOn>().toFollow = spawned;
         _respawning = false;
     }
