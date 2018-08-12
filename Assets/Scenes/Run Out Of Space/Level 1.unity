@@ -223,6 +223,48 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 1091872121637094, guid: b2661e0b7c804ab4caf4ae7bf77ac15f,
     type: 2}
   m_PrefabInternal: {fileID: 756438046}
+--- !u!1001 &962551815
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 4483613830658794, guid: 584369f7de13f3f4fa488f11c96cac34, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 2.91
+      objectReference: {fileID: 0}
+    - target: {fileID: 4483613830658794, guid: 584369f7de13f3f4fa488f11c96cac34, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4483613830658794, guid: 584369f7de13f3f4fa488f11c96cac34, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4483613830658794, guid: 584369f7de13f3f4fa488f11c96cac34, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4483613830658794, guid: 584369f7de13f3f4fa488f11c96cac34, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4483613830658794, guid: 584369f7de13f3f4fa488f11c96cac34, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4483613830658794, guid: 584369f7de13f3f4fa488f11c96cac34, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4483613830658794, guid: 584369f7de13f3f4fa488f11c96cac34, type: 2}
+      propertyPath: m_RootOrder
+      value: 3
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 584369f7de13f3f4fa488f11c96cac34, type: 2}
+  m_IsPrefabAsset: 0
 --- !u!1001 &1284987105
 Prefab:
   m_ObjectHideFlags: 0
@@ -345,5 +387,5 @@ MonoBehaviour:
   placeableNames:
   - Fixed
   - Expanding
-  placeableAmounts: 0200000000000000
+  placeableAmounts: 0200000001000000
   winArea: 100

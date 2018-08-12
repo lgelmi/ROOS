@@ -40,7 +40,7 @@ Transform:
   m_GameObject: {fileID: 1032531092360628}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 2, y: 2, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -135,7 +135,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   collisionParticles: {fileID: 1920077301572884, guid: 82fe09b122c974f6faa02d4c3b424b33,
     type: 2}
-  tAlive: 0
 --- !u!114 &114904202040102042
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -149,3 +148,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   placeableName: Fixed
   placeableType: 0
+  delicate: 0
