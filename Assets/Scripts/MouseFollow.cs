@@ -24,9 +24,6 @@ public class MouseFollow : MonoBehaviour
     {
         float distance = Vector3.Distance(transform.position, Camera.main.ScreenToWorldPoint(Input.mousePosition));
         float speed = maxSpeed * (distance - minimumDistance) / (maximumDistance - minimumDistance);
-        print(distance);
-        print(minimumDistance);
-        print(speed);
         if (speed < 0)
             speed = 0;
         else if (speed > maxSpeed)
